@@ -1,56 +1,31 @@
-import { useState, useEffect } from 'react'
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+
+// 기존 Jobs 페이지 (기존 App 로직을 별도 컴포넌트로 이동시키면 깔끔해짐)
+import JobsPage from './pages/JobsPage'
+
+// 새로 만든 기술스택 추출 페이지
+import ExtractPage from './pages/ExtractPage'
 
 function App() {
-  const [jobs, setJobs] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
-  const [query, setQuery] = useState('developer') // 기본 쿼리
-
-  useEffect(() => {
-    // 쿼리 파라미터 추가
-    fetch(`http://localhost:8000/api/v1/jobs/?query=${encodeURIComponent(query)}`)
-      .then((res) => {
-        console.log('Response', res)
-        // 응답 상태가 200이 아닐 경우 에러 처리
-        if (!res.ok) throw new Error('Network response was not ok')
-        return res.json()
-      })
-      .then((data) => {
-        console.log('Data', data)
-        setJobs(data)
-        setLoading(false)
-      })
-      .catch((err) => {
-        setError(err.message)
-        setLoading(false)
-      })
-  }, [query])
-
   return (
-    <div style={{ padding: 24 }}>
-      <h1>Jobs List (from FastAPI)</h1>
-      <input
-        type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="검색어 입력"
-        style={{ marginBottom: 12 }}
-      />
-      <button onClick={() => setLoading(true)}>검색</button>
-      {loading && <p>Loading...</p>}
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      <ul>
-        {Array.isArray(jobs) && jobs.length > 0 ? (
-          jobs.map((job, idx) => (
-            <li key={idx}>
-              {typeof job === 'object' ? JSON.stringify(job) : job}
-            </li>
-          ))
-        ) : (
-          !loading && <p>데이터가 없습니다.</p>
-        )}
-      </ul>
-    </div>
+    <Router>
+      <div style={{ padding: '20px', fontFamily: 'Arial' }}>
+        <h1>Job Navigator</h1>
+
+        {/* 메뉴 네비게이션 */}
+        <nav style={{ marginBottom: '20px' }}>
+          <Link to="/">Jobs</Link> | 
+          <Link to="/extract">기술스택 추출</Link>
+        </nav>
+
+        {/* 페이지 라우팅 */}
+        <Routes>
+          <Route path="/" element={<JobsPage />} />
+          <Route path="/extract" element={<ExtractPage />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
