@@ -2,3 +2,9 @@ fastapi
 uvicorn[standard]
 pydantic
 python-dotenv
+python-multipart
+pymupdf
+sentence-transformers
+scikit-learn
+nltk
+numpy
