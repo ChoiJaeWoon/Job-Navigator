@@ -23,6 +23,7 @@ venv/
 .coverage
 htmlcov/
 .pytest_cache/
+tests/temp
 
 # OS
 .DS_Store

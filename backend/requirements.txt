@@ -6,3 +6,7 @@ pydantic-settings
 black
 pytest
 httpx
+pdfplumber
+python-multipart
+pytest-asyncio
+fpdf
