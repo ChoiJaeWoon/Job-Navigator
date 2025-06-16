@@ -36,7 +36,7 @@ function MainPage() {
             {[
             { label: '트렌드 분석', link: '/trend' },
             { label: '채용 공고', link: '/jobs' },
-            { label: '이력서 분석', link: '/resume' },
+            { label: '이력서 분석', link: '/analyze' },
             ].map(({ label, link }) => (
             <Button
                 key={link}
