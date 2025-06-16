@@ -8,3 +8,5 @@ pytest
 httpx
 pdfplumber
 python-multipart
+pytest-asyncio
+fpdf
