@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes import job
+from app.routes import job, analyze
 from app.services import job_service
 from app.core.config import load_env, get_settings
 
@@ -35,3 +35,4 @@ def read_root():
 
 
 app.include_router(job.router, prefix="/api/v1/jobs", tags=["Jobs"])
+app.include_router(analyze.router, prefix="/api/v1/analyze", tags=["Analyze"])
