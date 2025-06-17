@@ -1,133 +1,59 @@
 body {
   margin: 0;
-  background-color: #f0f2f5;
-  font-family: Arial, sans-serif;
-}
-
-.root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.login-container {
-  background: white;
-  padding: 200px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
-  position: relative;
-}
-
-h1 {
-  position: absolute;
-  top: 150px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 30px;
-  margin: 0;
-}
-
-label {
-  display: block;
-  text-align: left;
-  font-size: 16px;
-  margin: 10px 0 5px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-.login-btn {
-  background-color: black;
-  color: white;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.btn-group2 {
-  margin-top: 20px;
-}
-
-.sign,
-.search {
-  cursor: pointer;
-  background-color: white;
-  border: none;
-  font-size: 14px;
-  padding: 5px 10px;
-  margin: 0;
-}
-
-/* 간편 로그인 버튼 */
-.total {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.naver,
-.google,
-.talk {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
   padding: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-/* 구글 버튼 스타일 */
-.google {
-  background-color: white;
-  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
 }
 
-.google img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-}
-.talk img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-.naver img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+.container {
+  max-width: 360px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
 }
 
-/* 네이버 버튼 스타일 */
-.naver {
-  color: white;
+.title {
+  font-size: 24px;
   font-weight: bold;
-  font-size: 25px;
+  margin-bottom: 10px;
 }
 
-/* 카카오 버튼 스타일 */
-.talk {
-  background-color: #fee500;
-  color: #381e1f;
-  font-size: 22px;
+.description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.google {
+  background-color: #fff;
+}
+
+.kakao {
+  background-color: #ffe812;
+  border: none;
+}
+
+.naver {
+  background-color: #03c75a;
+  color: white;
+  border: none;
+}
+
+.social-button img {
+  width: 30px;
+  height: 30px;
 }
