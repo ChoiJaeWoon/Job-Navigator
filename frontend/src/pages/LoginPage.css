@@ -1,0 +1,33 @@
+/* 📄 src/pages/LoginPage.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* ✅ 스크롤바 제거 */
+}
+
+
+.login-page-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 320px;
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transform: translateY(-100px);
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}

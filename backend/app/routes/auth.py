@@ -103,7 +103,10 @@ def google_login(request: UserCreate, db: Session = Depends(get_db)):
 def kakao_login():
     return RedirectResponse(
         f"https://kauth.kakao.com/oauth/authorize"
-        f"?client_id={KAKAO_CLIENT_ID}&redirect_uri={KAKAO_REDIRECT_URI}&response_type=code"
+        f"?client_id={KAKAO_CLIENT_ID}"
+        f"&redirect_uri={KAKAO_REDIRECT_URI}"
+        f"&response_type=code"
+        f"&prompt=login"  # 👈 항상 로그인 창을 띄우게 함
     )
 
 @router.get("/kakao/callback")

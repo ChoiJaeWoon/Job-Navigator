@@ -1,0 +1,59 @@
+/* 소셜 로그인 컨테이너 */
+.social-login-wrapper {
+  max-width: 250px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 공통 버튼 스타일 */
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 텍스트를 가운데 */
+  gap: 8px;
+  position: relative; /* 이미지 absolute 기준 */
+  height: 48px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 0 16px;
+}
+/* 구글 버튼 감싸는 박스 */
+.social-button.google {
+  padding: 0;
+  border: none;
+}
+
+/* 개별 색상 */
+.social-button.kakao {
+  background-color: white;
+  font-weight:normal;
+  
+}
+.social-button.kakao:hover {
+  background-color: #f0f5fe;  /* 구글처럼 밝은 회색 */
+  border-color: #ccc;         /* 구글처럼 연한 테두리 */
+}
+
+.social-button.naver {
+  background-color: white;
+  font-weight:normal;
+}
+.social-button.naver:hover {
+  background-color: #f0f5fe;  /* 구글처럼 밝은 회색 */
+  border-color: #ccc;         /* 구글처럼 연한 테두리 */
+}
+
+/* 아이콘 크기 */
+.social-button img {
+  position: absolute;
+  left: 16px;
+  width: 20px;
+  height: 20px;
+}
