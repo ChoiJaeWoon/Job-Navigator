@@ -1,0 +1,52 @@
+
+.tab-bar {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 12px;
+}
+
+.tab2 {
+  padding: 8px 16px;
+  border: none;
+  background-color: #eee;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tab.active2 {
+  background-color: #1e90ff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+.pdf-upload-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.pdf-input {
+  width: 400px;
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.pdf-upload-button {
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
