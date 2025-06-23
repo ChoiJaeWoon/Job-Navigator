@@ -9,6 +9,7 @@ import Jobs from './pages/JobsPage';
 import TrendPage from './pages/TrendPage';
 import ResumeAnalysisPage from './pages/ResumeAnalysisPage';
 import Header from './components/Header';
+import Jobanalysispage from './pages/Jobanalysispage';
 
 import './global.css';
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/trend" element={<TrendPage />} />
         <Route path="/resume" element={<ResumeAnalysisPage />} />
+        <Route path="/analysis" element={<Jobanalysispage />} />
       </Routes>
     </>
   );
