@@ -20,18 +20,42 @@ function Analysis() {
     );
   };
 
-  const generateGptRoadmap = () => {
+  const generateGptRoadmap = async () => {
     if (selectedSkills.length === 0) {
       alert("기술을 하나 이상 선택해주세요!");
       return;
     }
 
+    try {
+      const res = await fetch("http://localhost:8000/api/v1/roadmap", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          job: selectedJob,
+          skills: selectedSkills
+        })
+      });
 
+      if (!res.ok) {
+        throw new Error("서버 응답 오류");
+      }
+
+      const result = await res.json();
+      console.log("📊 분석 결과:", result);
+
+      // 예시: 결과 페이지로 이동하거나 상태 저장 가능
+      // navigate("/roadmap-result", { state: result });
+
+    } catch (error) {
+      console.error("❌ 분석 실패:", error);
+      alert("분석 중 오류가 발생했습니다.");
+    }
   };
 
   return (
     <div>
-
       {/* 탭바 */}
       <div className="tab-bar">
         <button className="tab active" onClick={() => navigate("/resume")}>PDF분석</button>
@@ -59,7 +83,7 @@ function Analysis() {
 
       {renderCategory("Frontend", [
         ["HTML", "CSS", "JavaScript", "TypeScript"],
-        ["React", "Vue.js", "Angular","Next.js", "Svelte", "Nust.js"]
+        ["React", "Vue.js", "Angular", "Next.js", "Svelte", "Nust.js"]
       ], selectedJob, selectedSkills, toggleSkill)}
 
       {renderCategory("Mobile", [
