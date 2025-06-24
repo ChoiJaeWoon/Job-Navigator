@@ -1,0 +1,29 @@
+# Python 기본
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# 가상환경
+.venv/
+env/
+ENV/
+venv/
+
+# 환경 변수 파일
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# 테스트 및 로그
+*.log
+.coverage
+htmlcov/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
