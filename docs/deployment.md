@@ -138,6 +138,9 @@ sudo systemctl restart nginx
 ```bash
 psql -U jobnav_user -d jobnav_db -h localhost -f /root/Job-Navigator/backend/sql/20250702_db.sql
 ```
+```bash
+sudo -u postgres psql -d jobnav_db -f /root/Job-Navigator/backend/sql/20250705_db.sql
+```
 
 ---
 
