@@ -11,6 +11,7 @@ from app.models.market_trends import MarketTrendORM
 
 router = APIRouter()
 
+
 # ✅ 공통 기술 트렌드 스키마
 class TechnologyTrend(BaseModel):
     name: str
@@ -18,12 +19,14 @@ class TechnologyTrend(BaseModel):
     count: int
     category: str
 
+
 # ✅ 직무별 기술 트렌드 응답 스키마
 class RoleTrendResponse(BaseModel):
     role: str
-    technologies: List[TechnologyTrend]  # 전체 목록
-    top_5: List[TechnologyTrend]         # 상위 5개
+    technologies: List[TechnologyTrend]
+    top_5: List[TechnologyTrend]
     summary: str
+
 
 # ✅ 직무별 요약 및 기술 키워드 API
 @router.get(
@@ -41,6 +44,7 @@ def get_role_trends(
     if not summary_obj:
         raise HTTPException(status_code=404, detail=f"[{role}] 요약 정보가 없습니다.")
 
+    # 전체 기술 목록 (percentage 기준 1.0 이상만 포함)
     all_tech = db.query(TechTrendORM).filter(
         TechTrendORM.job_category == role
     ).order_by(TechTrendORM.percentage.desc()).all()
@@ -52,18 +56,24 @@ def get_role_trends(
             count=row.count,
             category=row.category
         )
-        for row in all_tech if row.percentage >= 1.0
+        for row in all_tech if row.percentage and row.percentage >= 1.0
     ]
+
+    # ✅ DB에 저장된 top_percentage 기준 상위 5개만 쿼리
+    top_tech = db.query(TechTrendORM).filter(
+        TechTrendORM.job_category == role,
+        TechTrendORM.top_percentage != None
+    ).order_by(TechTrendORM.top_percentage.desc()).limit(5).all()
 
     top_5 = [
         TechnologyTrend(
             name=row.keyword,
-            percentage=row.top_percentage or 0.0,
+            percentage=row.top_percentage,
             count=row.count,
             category=row.category
         )
-        for row in all_tech if row.top_percentage and row.top_percentage > 0
-    ][:5]
+        for row in top_tech
+    ]
 
     return RoleTrendResponse(
         role=role,
@@ -81,6 +91,7 @@ class MarketTrendOut(BaseModel):
 
     class Config:
         orm_mode = True
+
 
 # ✅ 직무별 마켓 트렌드 조회 API
 @router.get(

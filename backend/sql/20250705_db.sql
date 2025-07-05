@@ -7952,8 +7952,6 @@ COPY public.tech_trends (trend_id, keyword, job_category, count, trend_date, cre
 3778	Tailwind	frontend	489	2025-06-30	2025-06-30 16:23:12.959996	library	12.05	22.28
 3779	Next.js	frontend	467	2025-06-30	2025-06-30 16:23:12.959996	framework	11.51	21.28
 3780	Redux	frontend	424	2025-06-30	2025-06-30 16:23:12.959996	language	10.45	19.32
-3781	Styled-Components	frontend	419	2025-06-30	2025-06-30 16:23:12.959996	language	10.33	19.09
-3782	React	frontend	396	2025-06-30	2025-06-30 16:23:12.959996	language	9.76	18.04
 3783	TypeScript	frontend	384	2025-06-30	2025-06-30 16:23:12.959996	language	9.46	0
 3784	Vue.js	frontend	342	2025-06-30	2025-06-30 16:23:12.959996	framework	8.43	0
 3785	RxJS	frontend	314	2025-06-30	2025-06-30 16:23:12.959996	language	7.74	0
@@ -8002,6 +8000,7 @@ COPY public.tech_trends (trend_id, keyword, job_category, count, trend_date, cre
 3828	Dart	frontend	2	2025-06-30	2025-06-30 16:23:12.959996	language	0.05	0
 3829	Blockchain	frontend	2	2025-06-30	2025-06-30 16:23:12.959996	language	0.05	0
 3830	GitHub	frontend	2	2025-06-30	2025-06-30 16:23:12.959996	tool	0.05	0
+3781	Styled-Components	frontend	419	2025-06-30	2025-06-30 16:23:12.959996	language	10.33	6.27
 3831	WebRTC	frontend	2	2025-06-30	2025-06-30 16:23:12.959996	language	0.05	0
 3832	QA	frontend	2	2025-06-30	2025-06-30 16:23:12.959996	etc	0.05	0
 3833	Confluence	frontend	2	2025-06-30	2025-06-30 16:23:12.959996	language	0.05	0
@@ -8127,11 +8126,6 @@ COPY public.tech_trends (trend_id, keyword, job_category, count, trend_date, cre
 3953	Redis	data	1	2025-06-30	2025-06-30 16:23:12.959996	language	0.03	0
 3954	Oracle	data	1	2025-06-30	2025-06-30 16:23:12.959996	language	0.03	0
 3955	Azure DevOps	data	1	2025-06-30	2025-06-30 16:23:12.959996	language	0.03	0
-4895	Java	backend	431	2025-07-05	2025-07-05 13:37:13.936412	language	7.76	34.15
-4896	Python	backend	257	2025-07-05	2025-07-05 13:37:13.936412	language	4.63	20.36
-4897	Linux	backend	202	2025-07-05	2025-07-05 13:37:13.936412	infra	3.64	16.01
-4898	MySQL	backend	197	2025-07-05	2025-07-05 13:37:13.936412	language	3.55	15.61
-4899	C	backend	175	2025-07-05	2025-07-05 13:37:13.936412	language	3.15	13.87
 4900	JavaScript	backend	173	2025-07-05	2025-07-05 13:37:13.936412	language	3.12	0
 4901	Spring Boot	backend	170	2025-07-05	2025-07-05 13:37:13.936412	language	3.06	0
 4902	AWS	backend	153	2025-07-05	2025-07-05 13:37:13.936412	infra	2.76	0
@@ -8461,11 +8455,6 @@ COPY public.tech_trends (trend_id, keyword, job_category, count, trend_date, cre
 5226	Ruby	backend	1	2025-07-05	2025-07-05 13:37:13.936412	language	0.02	0
 5227	AWS Batch	backend	1	2025-07-05	2025-07-05 13:37:13.936412	language	0.02	0
 5228	Spark Framework	backend	1	2025-07-05	2025-07-05 13:37:13.936412	language	0.02	0
-5229	C++	data	12	2025-07-05	2025-07-05 13:37:13.936412	language	4.88	22.64
-5230	C	data	12	2025-07-05	2025-07-05 13:37:13.936412	language	4.88	22.64
-5231	PyTorch	data	12	2025-07-05	2025-07-05 13:37:13.936412	language	4.88	22.64
-5232	AI/인공지능	data	9	2025-07-05	2025-07-05 13:37:13.936412	etc	3.66	16.98
-5233	Linux	data	8	2025-07-05	2025-07-05 13:37:13.936412	infra	3.25	15.09
 5234	TensorFlow	data	8	2025-07-05	2025-07-05 13:37:13.936412	language	3.25	0
 5235	Embedded Linux	data	8	2025-07-05	2025-07-05 13:37:13.936412	infra	3.25	0
 5236	Docker	data	7	2025-07-05	2025-07-05 13:37:13.936412	language	2.85	0
@@ -8729,11 +8718,6 @@ COPY public.tech_trends (trend_id, keyword, job_category, count, trend_date, cre
 5494	Citrix Gateway	other	1	2025-07-05	2025-07-05 13:37:13.936412	language	0.03	0
 5495	Zabbix	other	1	2025-07-05	2025-07-05 13:37:13.936412	etc	0.03	0
 5496	CDNetworks	other	1	2025-07-05	2025-07-05 13:37:13.936412	language	0.03	0
-5497	Kotlin	mobile	260	2025-07-05	2025-07-05 13:37:13.936412	language	14.99	33.08
-5498	C	mobile	149	2025-07-05	2025-07-05 13:37:13.936412	language	8.59	18.96
-5499	Go	mobile	139	2025-07-05	2025-07-05 13:37:13.936412	language	8.01	17.68
-5500	Svelte	mobile	129	2025-07-05	2025-07-05 13:37:13.936412	framework	7.44	16.41
-5501	HuggingFace	mobile	109	2025-07-05	2025-07-05 13:37:13.936412	language	6.28	13.87
 5502	Swift	mobile	73	2025-07-05	2025-07-05 13:37:13.936412	language	4.21	0
 5503	GCP	mobile	62	2025-07-05	2025-07-05 13:37:13.936412	language	3.57	0
 5504	Linux	mobile	47	2025-07-05	2025-07-05 13:37:13.936412	infra	2.71	0
@@ -8859,10 +8843,6 @@ COPY public.tech_trends (trend_id, keyword, job_category, count, trend_date, cre
 5624	Next.js	mobile	1	2025-07-05	2025-07-05 13:37:13.936412	framework	0.06	0
 5625	MySQL	mobile	1	2025-07-05	2025-07-05 13:37:13.936412	language	0.06	0
 5626	React	frontend	890	2025-07-05	2025-07-05 13:37:13.936412	language	16.92	30.85
-5627	C	frontend	630	2025-07-05	2025-07-05 13:37:13.936412	language	11.98	21.84
-5628	Next.js	frontend	589	2025-07-05	2025-07-05 13:37:13.936412	framework	11.2	20.42
-5629	Go	frontend	539	2025-07-05	2025-07-05 13:37:13.936412	language	10.25	18.68
-5630	HuggingFace	frontend	237	2025-07-05	2025-07-05 13:37:13.936412	language	4.51	8.21
 5631	Vue	frontend	230	2025-07-05	2025-07-05 13:37:13.936412	framework	4.37	0
 5632	Svelte	frontend	209	2025-07-05	2025-07-05 13:37:13.936412	framework	3.97	0
 5633	TypeScript	frontend	160	2025-07-05	2025-07-05 13:37:13.936412	language	3.04	0

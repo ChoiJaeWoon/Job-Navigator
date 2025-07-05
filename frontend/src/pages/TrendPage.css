@@ -230,3 +230,47 @@
     transform: translateY(0);
   }
 }
+
+.job-list-section {
+  margin-top: 32px;
+}
+
+.job-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.job-card h4 {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.job-card .job-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.job-card .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.job-card .tech-tag {
+  background-color: #f3f4f6;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #333;
+}
