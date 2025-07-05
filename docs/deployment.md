@@ -144,6 +144,18 @@ sudo -u postgres psql -d jobnav_db -f /root/Job-Navigator/backend/sql/20250705_d
 
 ---
 
+## DB 재적용 후 권한부여
+### db 접속
+```bash
+sudo -u postgres psql -d jobnav_db
+```
+### 전체 테이블에 권한 부여
+```bash
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO jobnav_user;
+```
+
+---
+
 ## 복잡 상황 검사
 
 ```bash
