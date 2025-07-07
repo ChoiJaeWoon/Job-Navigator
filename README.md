@@ -28,7 +28,7 @@
 | **Server**         | ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) |
 
 ## 🏗 시스템 아키텍처
-- ![찐완성 drawio](https://github.com/user-attachments/assets/d3e6d153-19f4-4e44-8713-1d373bc14628)
+![찐완성 drawio](https://github.com/user-attachments/assets/d3e6d153-19f4-4e44-8713-1d373bc14628)
 
 
 
