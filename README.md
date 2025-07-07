@@ -1,7 +1,7 @@
 # 요즘머함 (팀명: JOB아줘)
 
 ## 📄 서비스 소개
-<img src="./frontend/public/logo.png" alt="로고" width="100"/>
+<img src="./frontend/public/logo.png" alt="로고" width="100"/><br>
 - 서비스 명: 개발자를 위한 직무 트렌드 분석 및 OpenAI API를 통한 커리어 로드맵 생성 서비스
   - 직무별 기술 트렌드와 개인 이력서를 기반으로 개인 맞춤형 커리어 로드맵을 생성
   - 개발자의 기술 격차를 정량적으로 분석해 학습 방향을 제시하여 실무 역량 강화 및 취업 준비 효율성 향상
