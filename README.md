@@ -1,4 +1,4 @@
-# 📌 <img src="./frontend/public/logo.png" alt="로고" width="200"/>요즘머함 (팀명: JOB아줘)
+# 📌 <img src="./frontend/public/logo.png" alt="로고" width="100"/>요즘머함 (팀명: JOB아줘)
 
 ## 🧩 서비스 소개
 - (한 줄 또는 두 줄로 간결하게 설명)
