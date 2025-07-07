@@ -149,9 +149,19 @@ sudo -u postgres psql -d jobnav_db -f /root/Job-Navigator/backend/sql/20250705_d
 ```bash
 sudo -u postgres psql -d jobnav_db
 ```
-### 전체 테이블에 권한 부여
+### 1. 모든 테이블에 INSERT, SELECT, UPDATE, DELETE 권한 부여
 ```bash
-GRANT SELECT ON ALL TABLES IN SCHEMA public TO jobnav_user;
+GRANT INSERT, SELECT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO jobnav_user;
+```
+
+### 2. 모든 시퀀스에 USAGE, SELECT, UPDATE 권한 부여
+``` bash
+GRANT USAGE, SELECT, UPDATE ON ALL SEQUENCES IN SCHEMA public TO jobnav_user;
+```
+
+### 3. 완료 후 종료
+``` bash
+\q
 ```
 
 ---
