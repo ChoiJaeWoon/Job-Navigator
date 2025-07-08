@@ -1,4 +1,4 @@
-# 요즘머함 (팀명: JOB아줘)
+## 요즘머함 (팀명: JOB아줘)
 <div align="center">
   <img src="./frontend/public/logo.png" alt="로고" width="250"/><br>
 </div>
