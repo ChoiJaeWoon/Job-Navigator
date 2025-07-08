@@ -89,15 +89,15 @@ export default function Footer() {
             <Stack spacing={0.5}>
               <Box display="flex" alignItems="center">
                 <LocationOn fontSize="small" sx={{ mr: 1 }} />
-                <Typography variant="body2" fontSize={14}>서울특별시 강남구 테헤란로 123</Typography>
+                <Typography variant="body2" fontSize={14}>중앙로 196 스마트인재개발원</Typography>
               </Box>
               <Box display="flex" alignItems="center">
                 <Phone fontSize="small" sx={{ mr: 1 }} />
-                <Typography variant="body2" fontSize={14}>02-1234-5678</Typography>
+                <Typography variant="body2" fontSize={14}>062-1234-5678</Typography>
               </Box>
               <Box display="flex" alignItems="center">
                 <Email fontSize="small" sx={{ mr: 1 }} />
-                <Typography variant="body2" fontSize={14}>contact@company.com</Typography>
+                <Typography variant="body2" fontSize={14}>smhrd@company.com</Typography>
               </Box>
             </Stack>
           </Grid>
