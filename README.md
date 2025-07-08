@@ -40,7 +40,8 @@
 - (Flow Chart, Sequence Diagram 등)
 
 ## 🧩 ER 다이어그램
-- (ERD 이미지 삽입 또는 링크)
+![image](https://github.com/user-attachments/assets/8b922a97-1b4c-4b74-b81b-b13b2d51fe77)
+
 
 ## 🎨 화면 구성
 - (화면별 주요 UI 캡처 + 간단한 설명)
