@@ -123,5 +123,5 @@
 - 문제 3 : 적합한 모델 선정에 관한 문제
   - 사전 기반+sentence transformer 모델, keyBERT 모델, NER모델을 샘플 문장 300개를 가지고 테스트
   - 사전 기반+sentence transformer 모델의 f1 score가 94%이므로 MLflow 기반 객관적인 모델을 선택
-<img src="https://github.com/user-attachments/assets/4a249bfa-8c39-48de-bf9a-79ef4736223a" alt="AI 트러블슈팅" width="600"/>
+<img src="https://github.com/user-attachments/assets/b45024c1-f6d1-4fd7-8386-d4e3f13bebaa" alt="AI 트러블슈팅" width="600"/>
 <br><br><br>
