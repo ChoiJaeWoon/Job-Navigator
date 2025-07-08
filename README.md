@@ -31,7 +31,10 @@
 ![찐완성 drawio](https://github.com/user-attachments/assets/d3e6d153-19f4-4e44-8713-1d373bc14628)
 
 ## 📈 모델 실험 내용
--
+![KakaoTalk_20250708_091423950](https://github.com/user-attachments/assets/cadda34f-5d7b-450b-8501-a95e16b1353e)
+
+- 사전 기반+sentence transformer 모델, keyBERT 모델, NER모델을 샘플 문장 300개를 가지고 테스트
+- 사전 기반+sentence transformer 모델의 f1 score가 94%이므로 MLflow 기반 객관적인 모델을 선택
 
 ## 📌 유스케이스
 - (UML 형식 또는 간단한 설명)
