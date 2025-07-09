@@ -43,7 +43,7 @@ export default function Footer() {
             Job Navigator
           </Typography>
           <Typography variant="body2" color="text.secondary" fontSize={14}>
-            고객의 성공을 위한 최고의 서비스와 솔루션을 제공하는 것이 저희의 목표입니다.
+            사용자의 경험을 분석하고, 그 안의 가능성을 설계하는 것이 우리의 목표입니다.
           </Typography>
           <Stack direction="row" spacing={1} mt={1}>
             <IconButton><Facebook fontSize="small" /></IconButton>
