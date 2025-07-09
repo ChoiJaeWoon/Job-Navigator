@@ -123,9 +123,30 @@ export default function Footer() {
             © Job-Navigator. All rights reserved.
           </Typography>
           <Stack direction="row" spacing={2} mt={{ xs: 1, md: 0 }}>
-            <Link href="#" variant="body2" underline="hover" sx={{ color: 'text.primary', fontSize: 13 }}>개인정보처리방침</Link>
-            <Link href="#" variant="body2" underline="hover" sx={{ color: 'text.primary', fontSize: 13 }}>이용약관</Link>
-            <Link href="#" variant="body2" underline="hover" sx={{ color: 'text.primary', fontSize: 13 }}>쿠키정책</Link>
+            <Link
+              href="/policy#privacy"
+              variant="body2"
+              underline="hover"
+              sx={{ color: 'text.primary', fontSize: 13 }}
+            >
+              개인정보처리방침
+            </Link>
+            <Link
+              href="/policy#terms"
+              variant="body2"
+              underline="hover"
+              sx={{ color: 'text.primary', fontSize: 13 }}
+            >
+              이용약관
+            </Link>
+            <Link
+              href="/policy#cookie"
+              variant="body2"
+              underline="hover"
+              sx={{ color: 'text.primary', fontSize: 13 }}
+            >
+              쿠키정책
+            </Link>
           </Stack>
         </Box>
       </Container>

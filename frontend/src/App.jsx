@@ -14,6 +14,7 @@ import Footer from './components/Footer'; // ✅ Footer 컴포넌트 import
 import ResumeAnalysisDashboard from './pages/ResumeAnalysisDashboard';
 import ResumeAnalysisLoadingDemo from './pages/ResumeAnalysisLoadingDemo';
 import SocialLoginRedirectHandler from './pages/SocialLoginRedirectHandler';
+import PolicyPage from './pages/PolicyPage';
 import './global.css';
 
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="/mypage" element={<MyPage userInfo={userInfo} setUserInfo={setUserInfo} />} />
           <Route path="/resume-loading-demo" element={<ResumeAnalysisLoadingDemo />} />
           <Route path="/login" element={<SocialLoginRedirectHandler setUserInfo={setUserInfo} />} />
+          <Route path="/policy" element={<PolicyPage />} />
         </Routes>
       </main>
 
