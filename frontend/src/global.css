@@ -18,3 +18,13 @@ body,
   padding-left: 12px !important;
   padding-right: 4px;
 }
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; /* 📌 이게 없으면 Footer는 위로 붙음 */
+}

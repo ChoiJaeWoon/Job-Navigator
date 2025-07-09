@@ -25,7 +25,17 @@ export default function Footer() {
   const linkStyle = { color: 'text.primary', fontSize: 14, textDecoration: 'none' };
 
   return (
-    <Box component="footer" bgcolor="#f9f9f9" color="text.primary" py={2} borderTop={1} borderColor="grey.300">
+    <Box
+      component="footer"
+        sx={{
+            bgcolor: '#f9f9f9',
+            color: 'text.primary',
+            py: 2,
+            borderTop: 1,
+            borderColor: 'grey.300',
+            mt: 'auto', // flex column 구조일 때 자동 아래로
+        }}
+    >
       <Container maxWidth="lg">
         {/* 회사명 */}
         <Box mb={2}>
@@ -45,7 +55,6 @@ export default function Footer() {
 
         {/* 서비스 / 회사 / 연락처 */}
         <Grid container spacing={2} justifyContent="space-between">
-          {/* 서비스 */}
           <Grid item xs={12} md={4}>
             <Typography variant="subtitle1" fontWeight="bold" gutterBottom>
               서비스
@@ -63,7 +72,6 @@ export default function Footer() {
             </Stack>
           </Grid>
 
-          {/* 회사 */}
           <Grid item xs={12} md={4}>
             <Typography variant="subtitle1" fontWeight="bold" gutterBottom>
               회사
@@ -81,7 +89,6 @@ export default function Footer() {
             </Stack>
           </Grid>
 
-          {/* 연락처 */}
           <Grid item xs={12} md={4}>
             <Typography variant="subtitle1" fontWeight="bold" gutterBottom>
               연락처

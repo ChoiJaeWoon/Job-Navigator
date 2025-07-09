@@ -28,24 +28,24 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="app-wrapper"> {/* ✅ 반드시 이 div로 감싸야 함 */}
       <Header userInfo={userInfo} setUserInfo={setUserInfo} />
-      <Routes>
-       
-        <Route path="/" element={<MainPage userInfo={userInfo} setUserInfo={setUserInfo} />} />
-        <Route path="/jobs" element={<Jobs />} />
-        <Route path="/trend" element={<TrendPage />} />
-        <Route path="/resume" element={<ResumeAnalysisPage />} />
-        {/* ✅ 분석된 이력서 상세 결과 대시보드 */}
-        <Route path="/resume-analysis/:resumeId" element={<ResumeAnalysisDashboard />} />
 
-        {/* ✅ 마이페이지 - 이미지 변경 시 userInfo 즉시 반영 */}
-        <Route path="/mypage" element={<MyPage userInfo={userInfo} setUserInfo={setUserInfo} />} />
-        <Route path="/resume-loading-demo" element={<ResumeAnalysisLoadingDemo />} />
-        <Route path="/login" element={<SocialLoginRedirectHandler setUserInfo={setUserInfo} />} />
-      </Routes>
+      <main className="main-content"> {/* ✅ 반드시 flex: 1 적용될 영역 */}
+        <Routes>
+          <Route path="/" element={<MainPage userInfo={userInfo} setUserInfo={setUserInfo} />} />
+          <Route path="/jobs" element={<Jobs />} />
+          <Route path="/trend" element={<TrendPage />} />
+          <Route path="/resume" element={<ResumeAnalysisPage />} />
+          <Route path="/resume-analysis/:resumeId" element={<ResumeAnalysisDashboard />} />
+          <Route path="/mypage" element={<MyPage userInfo={userInfo} setUserInfo={setUserInfo} />} />
+          <Route path="/resume-loading-demo" element={<ResumeAnalysisLoadingDemo />} />
+          <Route path="/login" element={<SocialLoginRedirectHandler setUserInfo={setUserInfo} />} />
+        </Routes>
+      </main>
+
       <Footer />
-    </>
+    </div>
   );
 }
 
