@@ -120,7 +120,7 @@ export default function Footer() {
           textAlign={{ xs: 'center', md: 'left' }}
         >
           <Typography variant="body2" color="text.secondary" fontSize={13}>
-            © 2024 회사명. All rights reserved.
+            © Job-Navigator. All rights reserved.
           </Typography>
           <Stack direction="row" spacing={2} mt={{ xs: 1, md: 0 }}>
             <Link href="#" variant="body2" underline="hover" sx={{ color: 'text.primary', fontSize: 13 }}>개인정보처리방침</Link>
