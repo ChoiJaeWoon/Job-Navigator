@@ -1,9 +1,7 @@
-// 📄 src/pages/ResumeAnalysisPage.jsx
 import React, { useState, useRef } from 'react';
 import './ResumeAnalysisPage.css';
 import { useNavigate } from 'react-router-dom';
 import { FaCheckCircle } from 'react-icons/fa';
-import AnalysisTopBar from '../components/AnalysisTopBar';
 import AnimatedStepper from '../components/AnimatedStepper';
 import JobIntroCards from '../components/JobIntroCards';
 import { Box, Typography } from '@mui/material';
@@ -92,7 +90,6 @@ export default function ResumeAnalysisPage() {
 
   return (
     <div>
-      <AnalysisTopBar activeTab="pdf" onAnalyzeClick={uploadPDF} />
 
       {loading ? (
         <>
@@ -138,6 +135,27 @@ export default function ResumeAnalysisPage() {
                 className="resume-square-input"
                 onChange={handleFileChange}
               />
+            </div>
+
+            {/* ✅ 분석시작 버튼 */}
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '24px' }}>
+              <button
+                onClick={uploadPDF}
+                className="analyze-button"
+                disabled={loading}
+                style={{
+                  backgroundColor: '#000',
+                  color: '#fff',
+                  padding: '12px 32px',
+                  borderRadius: '8px',
+                  fontSize: '16px',
+                  fontWeight: 'bold',
+                  cursor: 'pointer',
+                  border: 'none',
+                }}
+              >
+                분석시작
+              </button>
             </div>
           </div>
         </section>
