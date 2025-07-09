@@ -90,7 +90,6 @@ export default function ResumeAnalysisPage() {
 
   return (
     <div>
-
       {loading ? (
         <>
           <Box sx={{ mt: 15, textAlign: 'center' }}>
@@ -108,12 +107,13 @@ export default function ResumeAnalysisPage() {
       ) : (
         <section className="analysis-section">
           <div className="resume-input-button-row">
-            <div
+            {/* ✅ 클릭/드래그 모두 대응하는 label */}
+            <label
+              htmlFor="resume-upload-input"
               className={`resume-drop-area ${dragOver ? 'drag-over' : ''} ${selectedFileName ? 'uploaded' : ''}`}
               onDragOver={handleDragOver}
               onDragLeave={handleDragLeave}
               onDrop={handleDrop}
-              onClick={() => fileInputRef.current?.click()}
             >
               {selectedFileName ? (
                 <>
@@ -128,14 +128,18 @@ export default function ResumeAnalysisPage() {
                   올려주세요
                 </p>
               )}
-              <input
-                type="file"
-                accept="application/pdf"
-                ref={fileInputRef}
-                className="resume-square-input"
-                onChange={handleFileChange}
-              />
-            </div>
+            </label>
+
+            {/* ✅ 숨겨진 input */}
+            <input
+              id="resume-upload-input"
+              type="file"
+              accept="application/pdf"
+              ref={fileInputRef}
+              className="resume-square-input"
+              onChange={handleFileChange}
+              style={{ display: 'none' }}
+            />
 
             {/* ✅ 분석시작 버튼 */}
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '24px' }}>
