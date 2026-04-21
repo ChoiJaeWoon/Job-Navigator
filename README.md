@@ -111,9 +111,7 @@ Job-Navigator/
 ![image](https://github.com/user-attachments/assets/fac320c7-d18b-41b9-9797-2f83c3c68ea3)
 <br><br>
 
-<details>
-<summary><b>📸 전체 화면 스크린샷 보기 (클릭하여 펼치기)</b>
-<br>
+## 🎨 서비스 화면 미리보기
 
 | 메인페이지 |
 |--------|
@@ -145,7 +143,7 @@ Job-Navigator/
 | 커리어 로드맵(이력서 분석 결과) |
 |--------|
 | <img src="https://github.com/user-attachments/assets/b90a6a0b-8cab-43a6-96a7-23a69e2afded" alt="커리어 로드맵" width="900"/> |
-<br>
+<br><br>
 
 
 ## 👥 팀원 역할
