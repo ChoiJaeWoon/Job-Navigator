@@ -112,7 +112,7 @@ Job-Navigator/
 <br><br>
 
 <details>
-<summary><b>📸 전체 화면 스크린샷 보기 (클릭하여 펼치기)</b></summary>
+<summary><b>📸 전체 화면 스크린샷 보기 (클릭하여 펼치기)</b>
 <br>
 
 | 메인페이지 |
@@ -145,8 +145,6 @@ Job-Navigator/
 | 커리어 로드맵(이력서 분석 결과) |
 |--------|
 | <img src="https://github.com/user-attachments/assets/b90a6a0b-8cab-43a6-96a7-23a69e2afded" alt="커리어 로드맵" width="900"/> |
-
-</details>
 <br>
 
 
